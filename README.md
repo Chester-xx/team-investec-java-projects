@@ -111,4 +111,4 @@ team-investec-java-projects/
 
 ## License
 
-![]()
+![MIT](https://github.com/Chester-xx/team-investec-java-projects/blob/main/LICENSE)
