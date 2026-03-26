@@ -19,7 +19,7 @@ team-investec-java-projects/
 │
 ├── src/                                             # Projects source code
 │   │
-│   ├── banking-system/                              # Banking system project
+│   ├── banking/                              # Banking system project
 │   │   ├── model/
 │   │   │   ├── BankAccount.java                     # Abstract base class
 │   │   │   ├── SavingsAccount.java                  # Extends BankAccount
