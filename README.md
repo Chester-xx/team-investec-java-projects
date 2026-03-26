@@ -3,11 +3,11 @@
 ## Team Investec
 
 ### Contributors:
-- **Maximus Bergman** [Team Lead]
+- **Maximus Bergmann** [Team Lead]
 - **Tahir Sallie** - [Role/Specialty]
 - **Matthew Magadza** - [Role/Specialty]
-- **Maggen Van Reenen** - [Role/Specialty]
-- **Aiden Wyngaard** - [Role/Specialty]
+- **Rameez Cassim** - [Role/Specialty]
+- **Hamza Mohammad** - [Role/Specialty]
 
 #### Overseer - Muaaz 
 
@@ -16,18 +16,36 @@
 ```
 team-investec-java-projects/
 │
-├── src/                               # Projects source code
-│   ├── banking-system/
-│   ├── data-pipeline/
-│   └── rest-api/
+├── src/                                             # Projects source code
+│   │
+│   ├── banking-system/                              # Banking system project
+│   │   ├── model/
+│   │   │   ├── BankAccount.java                     # Abstract base class
+│   │   │   ├── SavingsAccount.java                  # Extends BankAccount
+│   │   │   ├── CurrentAccount.java                  # Extends BankAccount
+│   │   │   ├── Transaction.java                     # Immutable record of one event
+│   │   │   └── InsufficientFundsException.java
+│   │   ├── auth/
+│   │   │   ├── User.java                            # Base user with role
+│   │   │   ├── Customer.java                        # Subclass (optional)
+│   │   │   └── Teller.java                          # Subclass with extra permissions
+│   │   ├── service/
+│   │   │   └── BankService.java                     # Business logic, holds all accounts
+│   │   └── Main.java                                # Entry point, menu loop
+│   │
+│   ├── data-pipeline/                               # Data pipeline project
+│   │
+│   └── rest-api/                                    # REST API project
 │
-├── docs/                              # Documentation
+├── docs/                                            # Documentation
+│      ├── Sprint_Briefs_and_Tickets.docx            # Project context, architecture, dependencies and tickets for all 3 sprints
+│      └── Agile_Simulation_Team_Charter.docx        # Team dynamic, role and professional behavior
 │
-├── resources/                         # Resources, references and links
+├── resources/                                       # Resources, references and links
 │
-├── README.md                          # Descriptor
-├── LICENSE                            # MIT source code license
-└── .gitignore                         # Git ignore configuration
+├── README.md                                        # Descriptor
+├── LICENSE                                          # MIT source code license
+└── .gitignore                                       # Git ignore configuration
 ```
 
 ## Help
@@ -82,13 +100,31 @@ team-investec-java-projects/
 
 ## Contribution Guidelines
 
+### Outline
+```bash
+# Format:
+type: short description of what changed — closes #ticket_number
+
+# Types:
+feat:     a new feature or piece of functionality
+fix:      a bug fix
+refactor: restructuring code without changing what it does
+docs:     adding or updating a README or comment
+test:     adding tests (stretch goal)
+
+# Examples:
+feat: add SavingsAccount minimum balance enforcement — closes #4
+fix: withdraw() was not logging the transaction — closes #7
+refactor: extract validateAmount() into separate method — closes #9
+docs: update README with how to run the banking app — closes #12
+```
+
 1. **Branching Strategy**
    - Create feature branches for new topics: `feature/topic-name`
    - Create fix branches for corrections: `fix/issue-name`
 
 2. **Commit Messages**
-   - Format: `[Category] [Outline]`
-   - Example: `Fix banking-system event loop`
+   - Format: `[Category] [Outline] - closes [ticket number]`
    - Commit description will go more in depth 
 
 3. **Code Quality**
