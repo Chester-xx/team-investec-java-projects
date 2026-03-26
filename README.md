@@ -8,6 +8,7 @@
 - **Matthew Magadza** - [Role/Specialty]
 - **Rameez Cassim** - [Role/Specialty]
 - **Hamza Mohammad** - [Role/Specialty]
+- **Jaden Ruiters** - [Role/Specialty]
 
 #### Overseer - Muaaz 
 
