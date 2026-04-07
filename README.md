@@ -61,8 +61,8 @@ team-investec-java-projects/
 
 1. **Clone repository**
    ```bash
-   git clone https://github.com/Chester-xx/team-investec-java-projects.git
    cd C://path/to/team-investec-java-projects
+   git clone https://github.com/Chester-xx/team-investec-java-projects.git
    ```
 
 2. **Verify Java installation**
