@@ -6,4 +6,9 @@ package banking.model;
 
 public class Transaction {
     
+    enum Type {
+        DEPOSIT,
+        WITHDRAWAL
+    }
+
 }

@@ -4,6 +4,6 @@
 
 package banking.model;
 
-public class InsufficientFundsException {
+public class InsufficientFundsException extends Exception {
     
 }
