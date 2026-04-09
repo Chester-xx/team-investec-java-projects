@@ -5,7 +5,7 @@
 ### Contributors:
 - **Maximus Bergmann** [Team Lead]
 - **Tahir Sallie** - [Role/Specialty]
-- **Matthew Magadza** - [Role/Specialty]
+- **Matthew Magadza** - [software developer]
 - **Rameez Cassim** - [Role/Specialty]
 - **Hamza Mohammad** - [Role/Specialty]
 - **Jaden Ruiters** - [Role/Specialty]
