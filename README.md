@@ -9,7 +9,7 @@
 - **Rameez Cassim** - [Role/Specialty]
 - **Hamza Mohammad** - [Role/Specialty]
 - **Jaden Ruiters** - [Role/Specialty]
-- **Jared Borman** - [Role/Speciality]
+- **Jared Borman** - [Role/Specialty]
 
 #### Overseer - Muaaz 
 
