@@ -15,19 +15,21 @@ public class InsufficientFundsException extends Exception {
     //@param amountRequested  the amount the caller tried to withdraw
     //@param availableBalance the current balance of the account
     public InsufficientFundsException(double amountRequested, double availableBalance){
+
         super(buildMessage(amountRequested, availableBalance));
         this.shortfall = amountRequested - availableBalance;
+    
     }
+
     //Builds the user-facing error message
     //Extracted as a static helper so it can be passed to super() before {@code this.shortfall} is assigned.
     private static String buildMessage(double amountRequested, double availableBalance){
-        double shortfall = amountRequested - availableBalance;
-        return String.format(
-            "Insufficient funds. You need R %.2f more to complete this withdrawal.", shortfall
-        );
-    
         
+        double shortfall = amountRequested - availableBalance;
+        return String.format("Insufficient funds. You need R %.2f more to complete this withdrawal.", shortfall);
+    
     }
+
     //Returns the exact amount by which the withdrawal exceeded the balance
     //Returns the shortfall (amountRequested - availableBalance)
     //getShortfall returns the raw double, whereas getMessage gives a human-readable string
