@@ -129,9 +129,17 @@ public abstract class BankAccount {
         balance += amount;
     
         // create new transaction and add to transactions list
-        Transaction newTransaction = new Transaction(Type.DEPOSIT, amount, balance);
-        transactions.add(newTransaction);
+        addTransaction(new Transaction(Type.DEPOSIT, amount, balance));
     
+    }
+
+    /**
+     * Logs a new transaction to the transaction list.
+     * 
+     * @param transaction the new transaction object to be added
+    */ 
+    public void addTransaction(Transaction transaction) {
+        transactions.add(transaction);
     }
 
     /**
